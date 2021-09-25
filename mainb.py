@@ -22,7 +22,7 @@ class main():
         coin= self.get_all()
         coin+=[]
         for symbol in list(coin):
-            while True:
+            
               try:
                   fund=self.client.futures_funding_rate(symbol=symbol)
                   klines=self.client.futures_historical_klines(symbol,self.client.KLINE_INTERVAL_8HOUR,"1 day ago UTC+5.30")
